@@ -1,0 +1,102 @@
+html, body, * {
+	margin: 0;
+	padding: 0;
+	font: 1em "Segoe UI", "Trebuchet MS", sans-serif;
+	box-sizing: border-box;
+}
+
+header.page-header {
+	background-image: url('../imagens/espaço_bg.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	min-height: 100vh;
+}
+
+header.page-header nav {
+	height: 60px;
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+
+header.page-header nav h1 a img{
+	height:40px;
+}
+
+
+header.page-header nav .btn-menu{
+	border: none;
+	background: none;
+	color: #fff;
+	width: 40px;
+	height: 40px;
+	font-size: 1.8em;
+	cursor: pointer;
+	line-height: 40px;
+	vertical-align: center;
+}	
+
+header.page-header nav .menu{	
+	display: none;
+}
+
+header.page-header .content {
+	min-height: 100vh;
+	background-color: rgba(0, 0, 0, 0.8);
+	margin-top: -60px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: #fff;
+	text-align: center;
+}
+
+header.page-header .content h2 {
+	font-size: 3em;
+}
+
+header.page-header .content p.btn-sobre { 
+	margin-top: 20px;
+}
+
+header.page-header .content p.btn-sobre a {
+	background-color: #d71f24;
+	padding: 10px;
+	border-radius: 4px;
+	color: #fff;
+	text-decoration: none;
+} 
+
+@media(min-width: 1024px) {
+	header.page-header nav {
+		width: 980px;
+		margin: 0 auto;
+	}
+	
+	header.page-header nav .btn-menu {
+        display: none;
+    }
+
+    header.page-header nav .menu {
+        display: block;
+    }
+	
+	header.page-header nav ul.menu,
+	header.page-header nav ul.menu li {
+		list-style: none;
+		display: inline;
+	}
+	
+	header.page-header nav ul.menu li a{
+		color: #fff;
+		text-decoration: none;
+		margin-left: 10px;
+		line-height: 40px;
+		vertical-align: center;
+	}
+	
+	header.page-header nav ul.menu li a:hover{
+		color: #999
+	}
+}

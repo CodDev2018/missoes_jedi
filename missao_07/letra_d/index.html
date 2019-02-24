@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<p style="color: red">Informe a quantidade de itens</p>
+	
+	<table border="1" style="border-collapse: collapse" width="100%">
+		<thead>
+			<tr>
+				<th>Produto</th>
+				<th>Qtde.</th>
+				<th>Preço Un.</th>
+				<th>Total</th>
+				<th>Ações</th>
+			</tr>
+		</thead>
+		<tbody id="cart-body">
+			<tr id="cart-form">
+				<td><input type="text" name="inputNome" id="inputNome"></td>
+				<td><input type="number" name="inputQtde" id="inputQtde"></td>
+				<td><input type="number" name="inputPrecoUn" id="inputPrecoUn"></td>
+				<td></td>
+				<td><button id="btn-enviar">Enviar</button></td>
+			</tr>
+		</tbody>
+	</table>
+	
+	<p style="text-align: right">Total: <strong id="card-total">0,00</strong></p>
+	
+	<script src="cart.js"></script>
+</body>
+</html>

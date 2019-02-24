@@ -1,0 +1,28 @@
+<html>
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<script>
+		let qtde = parseInt(prompt("Quantos alunos?")) 
+		
+		let soma = 0
+		if (isNaN(qtde)) {
+			alert("Quantidade de alunos deve ser numérica")
+		} else {
+			for(var i = 0; i < qtde; i++) { 
+				const nota = parseFloat(prompt("Nota do aluno?"))
+				console.log(nota)
+				if (isNaN(nota)) {
+					alert("Nota deve ser numérico")
+				} else {
+					soma += nota
+				}
+			}
+		}
+		
+		alert("A soma dos produtos é: " + soma / qtde)
+	</script>
+</body>
+</html>

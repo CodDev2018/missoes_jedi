@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<label for="inputNome">Seu nome:</label>
+	<input type="text" name="inputNome" id="inputNome">
+	<button onclick="tratarEnvio()">Enviar</button>
+	
+	<script>
+		function tratarEnvio() {
+			var nome = document.getElementById("inputNome").value
+			
+			if (nome) {
+				alert(`Olá ${nome}!`)
+				document.getElementById("inputNome").value = null
+			} else {
+				alert('Entre com o nome.')
+			}
+			document.getElementById("inputNome").focus()
+				
+		}
+	
+	</script>
+</body>
+</html>

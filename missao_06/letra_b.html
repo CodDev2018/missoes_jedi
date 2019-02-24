@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<script>
+		let idade = prompt('Qual a sua idade?')
+		idade = parseInt(idade)
+		
+		if (isNaN(idade)) {
+			alert("O valor deve ser numérico")
+		} else {
+			if (idade < 18) {
+				alert('Você é menor de idade!')
+			} else {
+				alert('Você é maior de idade!')
+			}
+		}
+			
+	</script>
+</body>
+</html>

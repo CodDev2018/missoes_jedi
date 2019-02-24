@@ -1,0 +1,28 @@
+<html>
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<script>
+		let qtde = parseInt(prompt("Quantos produtos?")) 
+		
+		let soma = 0
+		if (isNaN(qtde)) {
+			alert("Quantidade deve ser numérico")
+		} else {
+			for(var i = 0; i < qtde; i++) { 
+				const valor = parseFloat(prompt("Valor do produto?"))
+				console.log(valor)
+				if (isNaN(valor)) {
+					alert("Valor deve ser numérico")
+				} else {
+					soma += valor
+				}
+			}
+		}
+		
+		alert("A soma dos produtos é: " + soma)
+	</script>
+</body>
+</html>

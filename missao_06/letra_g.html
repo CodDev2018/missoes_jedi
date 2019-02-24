@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<script>
+
+		let pessoas = []
+		
+		do {
+			let nome = prompt("Qual o nome da pessoa?")
+			let idade = 0
+			let sexo = 'F'
+			
+			do {
+				idade = parseInt(prompt("Qual a idade da pessoa? (Deve ser numérico)"))
+			} while(isNaN(idade))
+			
+			do {
+				sexo = prompt("Qual o sexo da pessoa? (Deve ser F ou M)")
+			} while(sexo.toUpperCase() !== 'M' && sexo.toUpperCase() !== 'F')
+			
+			pessoas.push({
+				nome: nome,
+				idade: idade,
+				sexo: sexo,
+				maioridade: idade < 18 ? 'Menor de idade' : 'Maior de idade',
+				genero: sexo.toUpperCase() === 'M' ? 'Masculino' : 'Feminino'
+			})
+			
+		} while(confirm('Continuar lendo pessoas?'))
+		
+		console.table(pessoas)
+			
+
+	</script>
+</body> 
+</html>
