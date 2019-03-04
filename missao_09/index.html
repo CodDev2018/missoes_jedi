@@ -1,0 +1,43 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Criar Sites - O Método Jedi - Missão 04</title>
+	<link rel="stylesheet" type="text/css" href="contact-form.css">
+</head>
+<body>
+	<section class="contact-form">
+		<header>
+			<h1>CONTATO</h1>
+		<header>
+		
+		<div class="form">
+			<p>Dúvida? Sugestão? Reclamação? Envie seu contato.</p>
+			<p class="notificacoes"></p>
+			<form action="/contato" method="POST" name="contactForm" onsubmit="return validateContact()">
+				<select name="tipo" id="tipo">
+					<option value="">Tipo de contato...</option>
+					<option value="duvida">Duvida</option>
+					<option value="sugestao">Sugestão</option>
+					<option value="reclamacao">Reclamação</option>
+				</select>
+				
+				<input type="text" name="nome" id="nome" placeholder="Seu nome...">
+				
+				<input type="text" name="email" id="email" placeholder="Seu e-mail...">
+				
+				<textarea name="mensagem" id="mensagem" rows="4" placeholder="Sua mensagem..."></textarea>
+			
+				<button type="submit">Enviar</button>
+			
+			</form>
+			
+			<p>
+				Se preferir pode entrar em contato enviando email para: <br>
+				<b>codinomedeveloper@gmail.com</b>
+			</p>
+		</div>
+	</section>
+	<script src="formValidation.js"></script>
+</body>
+</html>
