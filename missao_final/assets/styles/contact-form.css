@@ -1,0 +1,92 @@
+html, body, * {
+	margin: 0;
+	padding: 0;
+	font: 1em "Segoe UI", "Trebuchet MS", sans-serif;
+	box-sizing: border-box;
+}
+
+.contact-form {
+	color: #f2f2f2;
+	background-color: #005544;
+}
+
+section.contact-form header h1:after {
+	background-color: #00e3c2;
+}
+
+section.contact-form .form {
+	padding: 10px;
+}	
+
+section.contact-form .form p {	
+	overflow-wrap: break-word;
+	text-align: center;
+	font-size: 1.3em;
+}
+
+section.contact-form .form p b{
+	font-weight: bolder;
+}
+
+section.contact-form .form form {
+	margin: 20px 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+section.contact-form .form form select,
+section.contact-form .form form input,
+section.contact-form .form form textarea,
+section.contact-form .form form button {
+	color: #666;
+	padding: 10px;
+	border-radius: 4px;
+	font-size: 1.2em;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+section.contact-form .form form select.invalid,
+section.contact-form .form form input.invalid,
+section.contact-form .form form textarea.invalid {
+	border: 2px solid red;
+}
+
+section.contact-form .form  .notificacoes {
+	text-align: center;
+	color: red;
+	font-weight: bold;
+}
+
+section.contact-form .form form select options {
+	color: #666;
+}
+
+section.contact-form .form form button { 
+	font-weight: bold;
+	color: #004369;
+	border: none;
+	background-color: #00ccff;
+}
+
+@media(min-width: 768px) {
+	section.contact-form .form {
+		width: 560px;
+		margin: 0 auto;
+	}
+	
+	section.contact-form .form form select,
+	section.contact-form .form form input {
+		width: 32%;
+	}
+}
+	
+	
+@media(min-width: 1024px) {
+	section.contact-form .form {
+		width: 780px;
+	}
+}
+		
+	

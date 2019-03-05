@@ -1,0 +1,136 @@
+html, body, * {
+	margin: 0;
+	padding: 0;
+	font: 1em "Segoe UI", "Trebuchet MS", sans-serif;
+	box-sizing: border-box;
+} 
+
+section {
+    background-color: #374837;
+	width: 100vw;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+}
+
+section header h1 {
+    text-align: center;
+	font-size: 3em;
+	font-weight: border;
+	margin-bottom: 10px;
+	text-transform: uppercase; 
+    color: #f2f2f2;
+}
+
+section header h1:after {
+	content: "";
+	display: block;
+	height: 3px;
+	width: 150px;
+	background-color: #00e3c2;
+	margin: 0 auto;
+}
+
+section .container {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #3E4837;
+    padding: 20px 10px;
+}
+
+footer .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer .logo,
+footer .social {
+    width: 50%
+}
+
+footer .menu,
+footer .copy {
+    width: 100%
+}
+
+footer .logo img {
+    height: 50px;
+}
+
+footer .logo {
+    height: 50px;
+    display: flex;
+}
+footer .logo span {
+    color: #fff;
+    font-size: 3em;
+    font-weight: bold;
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    margin-left: 10px;
+}
+
+footer .social {
+    text-align: right
+}
+
+footer .social ul, 
+footer .social ul li,
+footer .menu ul, 
+footer .menu ul li { 
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+footer .menu ul { 
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .social ul li {
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    vertical-align: center;
+}
+
+footer .menu ul li { 
+    display: block;
+}
+
+
+footer .social ul li a,
+footer .menu ul li a {
+    color: #fff;
+    font-size: 1.2em;
+    margin-left: 5px;
+    text-decoration: none;
+}
+
+footer .copy {
+    color: #fff;
+    text-align: center;
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+    footer .menu {
+        width: 600px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1024px) { 
+    footer .container {
+        width: 980px;
+        margin: 0 auto;
+    }
+}

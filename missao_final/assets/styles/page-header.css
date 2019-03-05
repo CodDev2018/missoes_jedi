@@ -1,0 +1,154 @@
+header.page-header {
+	background-image: url('../imagens/espaço_bg.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	min-height: 100vh;
+}
+
+header.page-header nav {
+	height: 60px;
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+
+header.page-header nav h1 a img{
+	height:40px;
+}
+
+
+header.page-header nav .btn-menu{
+	border: none;
+	background: none;
+	color: #fff;
+	width: 40px;
+	height: 40px;
+	font-size: 1.8em;
+	cursor: pointer;
+	line-height: 40px;
+	vertical-align: center;
+}	
+
+@media(max-width: 1023px) {
+	header.page-header nav .menu{	
+		position: fixed;
+		left: 0;
+		top: 0; 
+		bottom: 0;
+		right: 0;
+		background-color: rgba(0, 0, 0, 0.6);
+		margin: 0;
+		list-style: none;
+	}
+
+	header.page-header nav .menu ul {
+		float: left;
+		height: 100vh;
+		width: 60vw;
+		padding: 0 10px;
+		background-color: #000;
+	}
+
+	header.page-header nav .menu ul li { 
+		list-style: none;
+		margin: 0;
+		padding: 5px 0;
+	}
+
+	header.page-header nav .menu ul li a {
+		text-decoration: none;
+		color: #FFF;
+		font-size: 1.5em;
+	}
+
+	header.page-header nav .menu .btn-close {
+		border: none;
+		background: #000;
+		color: #fff;
+		width: 40px;
+		height: 40px;
+		font-size: 1.8em;
+		cursor: pointer;
+		line-height: 40px;
+		vertical-align: center;
+		position: fixed;
+		top: 10px;
+		right: 10px
+	}
+}
+
+header.page-header .content {
+	min-height: 100vh;
+	background-color: rgba(0, 0, 0, 0.8);
+	margin-top: -60px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: #fff;
+	text-align: center;
+}
+
+header.page-header .content h2 {
+	font-size: 3em;
+}
+
+header.page-header .content p.btn-sobre { 
+	margin-top: 20px;
+}
+
+header.page-header .content p.btn-sobre a {
+	background-color: #d71f24;
+	padding: 10px;
+	border-radius: 4px;
+	color: #fff;
+	text-decoration: none;
+} 
+
+.visible {
+	height: initial !important;
+	visibility: visible !important;
+	opacity: 1;
+	transition: opacity 200ms linear;
+}
+
+.hidden {
+	height: 0 !important;
+	visibility: hidden !important;
+	opacity: 0;
+	transition: visibility 0s 200ms, opacity 200ms linear;
+}
+
+@media(min-width: 1024px) {
+	header.page-header nav {
+		width: 980px;
+		margin: 0 auto;
+	}
+	
+	header.page-header nav .menu .btn-close,
+	header.page-header nav .btn-menu {
+        display: none;
+    }
+
+    header.page-header nav .menu li {
+        display: block;
+    }
+	
+	header.page-header nav .menu ul,
+	header.page-header nav .menu ul li {
+		list-style: none;
+		display: inline;
+	}
+	
+	header.page-header nav .menu ul li a{
+		color: #fff;
+		text-decoration: none;
+		margin-left: 10px;
+		line-height: 40px;
+		vertical-align: center;
+	}
+	
+	header.page-header nav .menu ul li a:hover{
+		color: #999
+	}
+}
